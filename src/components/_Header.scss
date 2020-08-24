@@ -1,0 +1,22 @@
+.header-container {
+  width: 80%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  .header-title {
+    font-size: 30px;
+    margin-bottom: 10%;
+  }
+  .header-content {
+    height: 10vh;
+  }
+
+  .header-image {
+    justify-content: center;
+
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+  }
+}
