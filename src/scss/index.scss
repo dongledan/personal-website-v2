@@ -1,4 +1,42 @@
 @import 'breakpoints';
+@import 'colors';
 
 @import '../components/Navbar';
 @import '../components/Header';
+@import '../components/About';
+
+@use "~inter-ui/default" with (
+  $inter-font-display: swap,
+  $inter-font-path: '~inter-ui/Inter (web)'
+);
+@use "~inter-ui/variable" with (
+  $inter-font-display: swap,
+  $inter-font-path: '~inter-ui/Inter (web)'
+);
+
+html { font-family: "Inter", "system-ui"; }
+
+@supports (font-variation-settings: normal) {
+  html { font-family: "Inter var", "system-ui"; }
+}
+
+body {
+  background-color: $platinum;
+  color: $black;
+}
+
+a {
+  text-decoration: none;
+  color: $lightGreen;
+  transition: 0.1s ease-in-out;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+footer {
+  display: flex;
+  padding: 50px 0 25px 0;
+  justify-content: center;
+}
