@@ -23,11 +23,11 @@ export default class Header extends Component {
                 <Image />
                 <span className="header-title">Danny Li</span>
                 <div className="colors-container">
-                  <div className="color"></div>
-                  <div className="color"></div>
-                  <div className="color"></div>
-                  <div className="color"></div>
-                  <div className="color"></div>
+                    <div className="color"></div>
+                    <div className="color"></div>
+                    <div className="color"></div>
+                    <div className="color"></div>
+                    <div className="color"></div>
                 </div>
                 <span
                     className="header-content"

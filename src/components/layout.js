@@ -11,7 +11,6 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import Navbar from "./Navbar";
 
-
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
         query SiteTitleQuery {
@@ -35,7 +34,7 @@ const Layout = ({ children }) => {
             >
                 <main>{children}</main>
                 <footer>
-                    © {new Date().getFullYear()}, Danny Li
+                    © {new Date().getFullYear()} Danny Li
                     {` `}
                 </footer>
             </div>

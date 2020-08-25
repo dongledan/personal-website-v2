@@ -21,13 +21,19 @@ const introContent = [
 ];
 
 let randomContent = [
-    `Fun fact: This website's color scheme was made using this picture. ☝`,
-    `My parents were deciding between Jackson and Danny. ^1000 Jackson Li, nice to meet you. <span role="img" aria-label="handshake"> 🤝</span> ^1000 Not bad... Has a nice ring to it, no?`,
-    `Ask me about the time where I spent over 8 hours in the mountains during a Spartan race. ^1000 It was not pleasant.`
+    `Fun fact: This website's color scheme was made using the picture above ☝.`,
+    `My parents were deciding between Jackson and Danny. ^1000 Jackson Li, nice to meet you <span role="img" aria-label="handshake"> 🤝</span>. ^1000 Not bad... Has a nice ring to it, no?`,
+    `Ask me about the time where I spent over 8 hours in the mountains during a Spartan race. ^1000 2/10 would not recommend.`,
+    `My guilty pleasure is watching 90 Day Fiancé.`,
+    `Ask me about anything fitness related <span role="img" aria-label="muscle">💪</span>. ^1000 I workout so I can eat shamelessly.`,
+    `If I could have any superpower, it would be to stop time. ^1000 I always think about this when I wake up in the morning as I hit snooze 30 times.`,
+    `I'm allergic to dogs.^1000.. but that doesn't stop me from running up to every dog I see. ^1000 P.S. I will dogsit for free! Danny's Doggy Daycare is open for business!`,
+    `I played the tuba in middle school. Where's the tuba emoji? #TubaRepresentation. ^1000 I had to sit on a phonebook to play it <span role="img" aria-label="sweat-smile">😅</span>.`,
+    `I mostly listen to indie/alternative, hip hop, and Spotify's algorithm. ^1000 My favorite band is Cage The Elephant.`
 ];
 
 const endContent = [
-    `Thank you for coming to my TED talk. ^1000 Stop by again, I'm here all day. <span role="img" aria-label="sweat-smile"> 😅</span> ^3000`,
+    `Thank you for coming to my TED talk. ^1000 Stop by again, I'm here all day <span role="img" aria-label="grimacing">😬</span>. ^3000`,
 ];
 
 const combinedContent = introContent.concat(shuffle(randomContent), endContent);
