@@ -29,7 +29,7 @@ let randomContent = [
     `If I could have any superpower, it would be to stop time. ^1000 I always think about this when I wake up in the morning as I hit snooze 30 times.`,
     `I'm allergic to dogs.^1000.. but that doesn't stop me from running up to every dog I see. ^1000 P.S. I will dogsit for free! Danny's Doggy Daycare is open for business!`,
     `I played the tuba in middle school. Where's the tuba emoji? #TubaRepresentation. ^1000 I had to sit on a phonebook to play it <span role="img" aria-label="sweat-smile">😅</span>.`,
-    `I mostly listen to indie/alternative, hip hop, and Spotify's algorithm. ^1000 My favorite band is Cage The Elephant.`
+    `I mostly listen to indie/alternative, hip hop, and Spotify's algorithm. ^1000 My favorite band is Cage The Elephant.`,
 ];
 
 const endContent = [

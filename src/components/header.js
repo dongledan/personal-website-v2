@@ -1,10 +1,10 @@
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
-import Typed from "typed.js";
 import React, { Component } from "react";
+import Typed from "typed.js";
 
 import { typewriterContentOptions } from "../content/headerContent";
 import Image from "./image";
+import ColorLine from "./ColorLine";
+
 export default class Header extends Component {
     constructor(props) {
         super(props);
@@ -21,14 +21,8 @@ export default class Header extends Component {
         return (
             <div className="header-container">
                 <Image />
-                <span className="header-title">Danny Li</span>
-                <div className="colors-container">
-                    <div className="color"></div>
-                    <div className="color"></div>
-                    <div className="color"></div>
-                    <div className="color"></div>
-                    <div className="color"></div>
-                </div>
+                <div className="header">Danny Li</div>
+                <ColorLine />
                 <span
                     className="header-content"
                     ref={typewriter => {
