@@ -28,7 +28,7 @@ const Image = () => {
 
     return (
         <Img
-            className="header-image"
+            className="header-img"
             fluid={data.placeholderImage.childImageSharp.fluid}
         />
     );

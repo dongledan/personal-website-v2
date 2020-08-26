@@ -28,6 +28,12 @@
       .console-header {
         margin: auto;
         padding-right: 60px;
+
+        @include mobile {
+          margin: 0;
+          padding: 0;
+          font-size: small;
+        }
         
       }
 
@@ -62,6 +68,10 @@
       font-size: 15px;
       line-height: 34px;
       border: none;
+
+      @include mobile {
+        min-width: 225px;
+      }
   
       &:focus, &:active { 
         outline: none;
@@ -72,6 +82,7 @@
       }
       .array-container {
         display: flex;
+        flex-wrap: wrap;
       }
 
       .cursor {
@@ -83,6 +94,12 @@
     }
   }
 }
+
+.about-link {
+  padding-bottom: 1px;
+  border-bottom: 2px solid $lightGreen;
+}
+
 @keyframes blink {
   from, to { opacity: 0; }
   

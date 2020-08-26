@@ -9,7 +9,11 @@
   justify-content: center;
   align-items: center;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 30px;
+
+  @include mobile {
+    width: 100%;
+  }
 
   .project-container {
     display: flex;
@@ -27,12 +31,12 @@
     .project-title {
       font-weight: bold;
       font-size: x-large;
-      color: $brown;
+      margin-bottom: 20px;
     }
 
     .project-img {
       height: auto;
-      width: 60%;
+      width: 50%;
 
       @include tablet {
         width: 80%;
@@ -40,7 +44,7 @@
     }
     
     .project-content {
-      width: 40%;
+      width: 45%;
 
       @include tablet {
         width: 80%;
@@ -51,7 +55,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: start;
+        justify-content: flex-start;
 
         .project-tech {
           padding: 4px 8px;
@@ -59,9 +63,10 @@
           font-size: smaller;
           color: $black;
           margin-bottom: 5px;
-          border: 1px solid $pink;
+          border: 1.5px solid $pink;
+          color: $pink;
           border-radius: 5px;
-          margin-right: 10px;
+          margin-right: 8px;
 
 
           @include tablet {
@@ -115,7 +120,7 @@
                 &::before {
                   position: absolute;
                   content: '';
-                  top: -0.27rem;
+                  top: -0.3rem;
                   right: 0.0625rem;
                   width: 0.625rem;
                   height: 0.625rem;

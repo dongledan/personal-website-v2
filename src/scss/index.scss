@@ -48,6 +48,10 @@ a {
     height: 2.5px;
     margin: 20px 2.5px;
 
+    @include mobile {
+      margin: 10px 2.5px;
+    }
+
     &:nth-child(1){
       background-color: #fff;
     }
