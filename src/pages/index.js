@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 
 import "../scss/index.scss";
 
@@ -10,9 +9,9 @@ import SEO from "../components/seo";
 
 const IndexPage = () => (
     <Layout>
+        <SEO title="Home" />
         <Header />
         <About />
-        <SEO title="Home" />
     </Layout>
 );
 

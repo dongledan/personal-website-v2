@@ -5,49 +5,20 @@
   justify-content: center;
   align-items: center;
   margin: auto;
+  margin-top: 40px;
 
-  .header-image {
-    margin: 3vh 0 1vh 0;
+  @include mobile {
+    width: 100%;
+  }
+
+  .header-img {
     height: 250px;
     width: 250px;
     border-radius: 50%;
   }
 
-  .header-title {
-    font-size: 40px;
-  }
-
-  .colors-container {
-    display: flex;
-
-    .color {
-      width: 40px;
-      height: 2.5px;
-      margin: 20px 2.5px;
-
-      &:nth-child(1){
-        background-color: #fff;
-      }
-  
-      &:nth-child(2){
-        background-color: $brown;
-      }
-      
-      &:nth-child(3){
-        background-color: $lightGreen;
-      }
-
-      &:nth-child(4){
-        background-color: $pink;
-      }
-      &:nth-child(5){
-        background-color: $black;
-      }
-    }
-  }
-
   .header-content {
-    height: 10vh;
+    height: 120px;
     margin: 0 5%;
     font-size: 18px;
     line-height: 28px;
@@ -55,7 +26,12 @@
     justify-content: center;
     box-sizing: border-box;
     text-align: center;
+
+    @include mobile {
+      margin: 0;
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
 
-  
 }

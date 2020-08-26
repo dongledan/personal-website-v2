@@ -4,8 +4,11 @@ import { currConsoleDate } from "../utils";
 import { aboutMe } from "../content/aboutContent";
 
 const contacts = [
-    <a href="mailto:dli0906@gmail.com">dli0906@gmail.com</a>,
+    <a className="about-link" href="mailto:dli0906@gmail.com">
+        dli0906@gmail.com
+    </a>,
     <a
+        className="about-link"
         rel="noopener noreferrer"
         target="_blank"
         href="https://www.linkedin.com/in/d-li"
@@ -13,6 +16,7 @@ const contacts = [
         linkedIn
     </a>,
     <a
+        className="about-link"
         rel="noopener noreferrer"
         target="_blank"
         href="https://github.com/dongledan"
@@ -22,7 +26,12 @@ const contacts = [
 ];
 
 const resume = [
-    <a href="DannyLi_Resume.pdf" target="_blank" rel="noopener">
+    <a
+        className="about-link"
+        href="DannyLi_Resume.pdf"
+        target="_blank"
+        rel="noopener"
+    >
         DannyLi_Resume.pdf
     </a>,
 ];
@@ -41,25 +50,26 @@ export default class About extends Component {
                         </div>
                     </div>
                     <div className="text">
-                        {aboutMe.map(info => (
-                            <div key={info.ouput}>
+                        <div>{`>> Danny.contactInfo`}</div>
+                        <div className="array-container output-text">
+                            [{"\xa0"}
+                            {contacts.map((link, i) => (
+                                <div key={i}>
+                                    "{link}"
+                                    {i === contacts.length - 1 ? "" : ",\xa0"}{" "}
+                                </div>
+                            ))}
+                            {"\xa0"}]
+                        </div>
+                        <div>{`>> Danny.resume`}</div>
+                        <div className="output-text">"{resume}"</div>
+                        {aboutMe.map((info, i) => (
+                            <div key={i}>
                                 <div>{`>> ${info.input}`}</div>
                                 <div className="output-text">{`${info.output}`}</div>
                             </div>
                         ))}
-                        <div>{`>> Danny.contactInfo`}</div>
-                        <div className="array-container output-text">
-                            [{" "}
-                            {contacts.map((link, i) => (
-                                <div>
-                                    "{link}"
-                                    {i === contacts.length - 1 ? "" : ",\xa0"}{" "}
-                                </div>
-                            ))}{" "}
-                            ]
-                        </div>
-                        <div>{`>> Danny.resume`}</div>
-                        <div className="output-text">"{resume}"</div>
+
                         <div className="array-container">
                             {" "}
                             {">>"}

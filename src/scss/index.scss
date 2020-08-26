@@ -4,6 +4,7 @@
 @import '../components/Navbar';
 @import '../components/Header';
 @import '../components/About';
+@import '../components/Projects';
 
 @use "~inter-ui/default" with (
   $inter-font-display: swap,
@@ -25,6 +26,10 @@ body {
   color: $black;
 }
 
+.header {
+  font-size: 40px; 
+}
+
 a {
   text-decoration: none;
   color: $lightGreen;
@@ -32,6 +37,47 @@ a {
 
   &:hover {
     opacity: 0.75;
+  }
+}
+
+.colors-container {
+  display: flex;
+
+  .color {
+    width: 40px;
+    height: 2.5px;
+    margin: 20px 2.5px;
+
+    @include mobile {
+      margin: 10px 2.5px;
+    }
+
+    &:nth-child(1){
+      background-color: #fff;
+    }
+
+    &:nth-child(2){
+      background-color: $brown;
+    }
+    
+    &:nth-child(3){
+      background-color: $lightGreen;
+    }
+
+    &:nth-child(4){
+      background-color: $pink;
+    }
+    &:nth-child(5){
+      background-color: $black;
+    }
+  }
+}
+
+hr {
+  margin-right: 40%;
+
+  @include tablet {
+    margin-right: 60%;
   }
 }
 
