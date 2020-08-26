@@ -71,6 +71,10 @@ a {
 
 hr {
   margin-right: 40%;
+
+  @include tablet {
+    margin-right: 60%;
+  }
 }
 
 footer {

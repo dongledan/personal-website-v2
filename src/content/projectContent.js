@@ -1,6 +1,6 @@
-import JUNFUSUMA from "images/JUNFUSUMA.png";
-import MTALens from "images/MTALens.png";
-import BarIsLoaded from "images/BarIsLoaded.png";
+import JUNFUSUMA from "../images/JUNFUSUMA.png";
+import MTALens from "../images/MTALens.png";
+import BarIsLoaded from "../images/BarIsLoaded.png";
 
 export const projects = [
     {
@@ -23,7 +23,7 @@ export const projects = [
         name: "MTALens",
         img: MTALens,
         description:
-            "Senior project for Fullstack Academy. The premise behind is to use MTA API to know when the next trains are coming. MTALens uses OCR from google vision and firebase for up to date alerts. Avoid being late again!",
+            "Capstone for Fullstack Academy. The premise behind is to use MTA API to know when the next trains are coming. MTALens uses OCR from google vision and firebase for up to date alerts. Point and shoot to avoid being late again!",
         github: "https://github.com/1906-fsa-foxs-flames/capstone",
         tech: ["React Native", "Firebase", "Google Vision", "MTA API"],
     },
