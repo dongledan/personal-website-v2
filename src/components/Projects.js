@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import {projects} from '../content/projectContent';
+import { projects } from "../content/projectContent";
 import ColorLine from "./ColorLine";
-import Project from './Project';
+import Project from "./Project";
 
 export default class Projects extends Component {
     render() {
@@ -11,7 +11,7 @@ export default class Projects extends Component {
                 <div className="header">Projects</div>
                 <ColorLine />
                 {projects.map(project => (
-                  <Project project={project} key={project.name} />
+                    <Project project={project} key={project.name} />
                 ))}
             </div>
         );

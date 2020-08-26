@@ -4,7 +4,9 @@ import { currConsoleDate } from "../utils";
 import { aboutMe } from "../content/aboutContent";
 
 const contacts = [
-    <a className="about-link" href="mailto:dli0906@gmail.com">dli0906@gmail.com</a>,
+    <a className="about-link" href="mailto:dli0906@gmail.com">
+        dli0906@gmail.com
+    </a>,
     <a
         className="about-link"
         rel="noopener noreferrer"
@@ -24,7 +26,12 @@ const contacts = [
 ];
 
 const resume = [
-    <a className="about-link" href="DannyLi_Resume.pdf" target="_blank" rel="noopener">
+    <a
+        className="about-link"
+        href="DannyLi_Resume.pdf"
+        target="_blank"
+        rel="noopener"
+    >
         DannyLi_Resume.pdf
     </a>,
 ];
