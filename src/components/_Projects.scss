@@ -1,5 +1,9 @@
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
+  transition: $property $duration $ease;
+}
+
 .projects-container {
-  width: 80%; 
+  width: 90%; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,14 +19,122 @@
     margin: 20px;
     width: 100%;
 
+    .project-title {
+      font-weight: bold;
+      font-size: x-large;
+      color: $brown;
+    }
+
     .project-img {
       height: auto;
       width: 60%;
     }
     
     .project-content {
-      margin: 10px;
       width: 30%;
+
+      .project-tech-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .project-tech {
+          padding: 3px;
+          text-align: center;
+          font-size: smaller;
+          color: $black;
+          margin-bottom: 10px;
+          border: 1px solid $pink;
+          border-radius: 5px;
+        }
+      }
+    
+
+      .project-desc {
+        text-align: justify;
+        margin-bottom: 20px;
+      }
+
+      button {
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        border: 0;
+        vertical-align: middle;
+        text-decoration: none;
+        background: transparent;
+        padding: 0;
+        &.learn-more {
+          width: 12rem;
+          height: auto;
+          .circle {
+            @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+            position: relative;
+            display: block;
+            margin: 0;
+            width: 3rem;
+            height: 3rem;
+            background: $lightGreen;
+            border-radius: 1.625rem;
+            .icon {
+              @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              background: $platinum;
+              &.arrow {
+                @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+                left: 0.625rem;
+                width: 1.125rem;
+                height: 0.125rem;
+                background: none;
+                &::before {
+                  position: absolute;
+                  content: '';
+                  top: -0.27rem;
+                  right: 0.0625rem;
+                  width: 0.625rem;
+                  height: 0.625rem;
+                  border-top: 0.125rem solid $platinum;
+                  border-right: 0.125rem solid $platinum;
+                  transform: rotate(45deg);
+                }
+              }
+            }
+          }
+          .button-text {
+            @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0.9rem 0;
+            margin: 0 0 0 1.85rem;
+            color: $black;
+            font-weight: 700;
+            line-height: 1.6;
+            text-align: center;
+            text-transform: uppercase;
+          }
+        }
+        &:hover {
+          .circle {
+            width: 100%;
+            .icon {
+              &.arrow {
+              background: $platinum;
+              transform: translate(1rem, 0);
+              }
+            }
+          }
+          .button-text {
+            color: $platinum;
+          }
+        }
+      }
     }
   }
 }

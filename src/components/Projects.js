@@ -19,6 +19,31 @@ export default class Projects extends Component {
                             and design. JUNFUSUMA is the past, present, and
                             future of fashion.
                         </div>
+                        <div className="project-tech-container">
+                          <div className="project-tech">
+                            Node.js
+                          </div>
+                          <div className="project-tech">
+                            React
+                          </div>
+                          <div className="project-tech">
+                            Redux
+                          </div>
+                          <div className="project-tech">
+                            Express
+                          </div>
+                          <div className="project-tech">
+                            PostGreSQL
+                          </div>
+                        </div>
+                        <button className="learn-more">
+                          <span className="circle" aria-hidden="true">
+                            <span className="icon arrow" />
+                          </span>
+                          <span className="button-text">
+                            Learn More
+                          </span>
+                        </button>
                     </div>
                     <img className="project-img" src={JUNFUSUMA} />
                 </div>
