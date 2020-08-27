@@ -92,7 +92,6 @@ footer {
   flex-direction: column;
 
   .back-to-top-container {
-    margin-top: 40px;
 
     .back-to-top {
       cursor: pointer !important;
@@ -107,6 +106,10 @@ footer {
           opacity: 1;
           transform: translateY(15px);
           transition: ease-in 0.5s;
+          &:after {
+            opacity: 1;
+            transform: translateY(15px);
+          }
         }
       }
 

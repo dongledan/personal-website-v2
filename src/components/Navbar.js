@@ -9,15 +9,10 @@ export default class Navbar extends Component {
                     <Link to={"/"} className="navbar-link">
                         Home
                     </Link>
-                    {["Projects", "Outlines"].map(link => (
-                        <Link
-                            key={link}
-                            to={`/${link.toLowerCase()}`}
-                            className="navbar-link"
-                        >
-                            <span>{link}</span>
-                        </Link>
-                    ))}
+                    <Link to={"/projects"} className="navbar-link">
+                        Projects
+                    </Link>
+                   
                 </nav>
             </div>
         );
