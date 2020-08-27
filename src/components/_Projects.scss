@@ -37,9 +37,10 @@
     .project-img {
       height: auto;
       width: 50%;
+      margin-bottom: 10px;
 
       @include tablet {
-        width: 80%;
+        width: 95%;
       }
     }
     
@@ -47,8 +48,9 @@
       width: 45%;
 
       @include tablet {
-        width: 80%;
+        width: 95%;
         margin-top: 20px;
+        font-size: 15px;
       }
 
       .project-tech-container {

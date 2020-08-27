@@ -6,7 +6,7 @@ import { aboutMe } from "../content/aboutContent";
 export default class About extends Component {
     render() {
         return (
-            <div className="about-container">
+            <>
                 <div className="console">
                     <div className="dots-container">
                         <div className="dot" />
@@ -44,7 +44,7 @@ export default class About extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </>
         );
     }
 }

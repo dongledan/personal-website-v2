@@ -26,9 +26,12 @@ const Layout = ({ children }) => {
                 <footer className="footer-container">
                     © {new Date().getFullYear()} Danny Li
                     {` `}
-                    <a className="back-to-top" onClick={() => scrollToTop()}>
-                        Back to top
-                    </a>
+                    <div className="back-to-top-container">
+                        <a className="back-to-top" onClick={() => scrollToTop()}>
+                        <div className="arrow">^</div>
+                            Back to top
+                        </a>
+                    </div>
                 </footer>
             </div>
         </>
