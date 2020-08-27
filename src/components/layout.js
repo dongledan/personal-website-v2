@@ -9,6 +9,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import Navbar from "./Navbar";
+import { scrollToTop } from "../utils";
 
 const Layout = ({ children }) => {
     return (
@@ -22,9 +23,12 @@ const Layout = ({ children }) => {
                 }}
             >
                 <main>{children}</main>
-                <footer>
+                <footer className="footer-container">
                     © {new Date().getFullYear()} Danny Li
                     {` `}
+                    <a className="back-to-top" onClick={() => scrollToTop()}>
+                        Back to top
+                    </a>
                 </footer>
             </div>
         </>

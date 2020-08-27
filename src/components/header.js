@@ -6,10 +6,6 @@ import Image from "./image";
 import ColorLine from "./ColorLine";
 
 export default class Header extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     componentDidMount() {
         this.typed = new Typed(this.typewriter, typewriterContentOptions);
     }

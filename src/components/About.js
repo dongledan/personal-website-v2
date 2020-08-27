@@ -3,39 +3,6 @@ import React, { Component } from "react";
 import { currConsoleDate } from "../utils";
 import { aboutMe } from "../content/aboutContent";
 
-const contacts = [
-    <a className="about-link" href="mailto:dli0906@gmail.com">
-        dli0906@gmail.com
-    </a>,
-    <a
-        className="about-link"
-        rel="noopener noreferrer"
-        target="_blank"
-        href="https://www.linkedin.com/in/d-li"
-    >
-        linkedIn
-    </a>,
-    <a
-        className="about-link"
-        rel="noopener noreferrer"
-        target="_blank"
-        href="https://github.com/dongledan"
-    >
-        github
-    </a>,
-];
-
-const resume = [
-    <a
-        className="about-link"
-        href="DannyLi_Resume.pdf"
-        target="_blank"
-        rel="noopener"
-    >
-        DannyLi_Resume.pdf
-    </a>,
-];
-
 export default class About extends Component {
     render() {
         return (
@@ -81,3 +48,36 @@ export default class About extends Component {
         );
     }
 }
+
+const contacts = [
+    <a className="about-link" href="mailto:dli0906@gmail.com">
+        dli0906@gmail.com
+    </a>,
+    <a
+        className="about-link"
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://www.linkedin.com/in/d-li"
+    >
+        linkedIn
+    </a>,
+    <a
+        className="about-link"
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://github.com/dongledan"
+    >
+        github
+    </a>,
+];
+
+const resume = [
+    <a
+        className="about-link"
+        href="DannyLi_Resume.pdf"
+        target="_blank"
+        rel="noopener"
+    >
+        DannyLi_Resume.pdf
+    </a>,
+];
