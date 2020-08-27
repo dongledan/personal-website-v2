@@ -21,9 +21,12 @@ html { font-family: "Inter", "system-ui"; }
   html { font-family: "Inter var", "system-ui"; }
 }
 
+$scrollLength: 100vh;
+
 body {
   background-color: $platinum;
   color: $black;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -84,5 +87,11 @@ hr {
 footer {
   display: flex;
   padding: 50px 0 25px 0;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .back-to-top {
+    margin-top: 40px;
+    cursor: pointer !important;
+  }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import { projects } from "../content/projectContent";
-import ColorLine from "./ColorLine";
+import { projects } from "../../content/projectContent";
+import ColorLine from "../ColorLine";
 import Project from "./Project";
 
 export default class Projects extends Component {
