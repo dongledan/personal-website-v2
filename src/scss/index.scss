@@ -5,6 +5,7 @@
 @import '../components/Header';
 @import '../components/About';
 @import '../components/Projects';
+@import '../components/Outlines';
 
 @use "~inter-ui/default" with (
   $inter-font-display: swap,
