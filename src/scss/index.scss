@@ -91,8 +91,29 @@ footer {
   align-items: center;
   flex-direction: column;
 
-  .back-to-top {
+  .back-to-top-container {
     margin-top: 40px;
-    cursor: pointer !important;
+
+    .back-to-top {
+      cursor: pointer !important;
+      .arrow {
+        text-align: center;
+        transform: translateY(35px);
+        font-size: xx-large;
+        opacity: 0;
+        padding: 5px 0;
+
+        &:hover {
+          opacity: 1;
+          transform: translateY(15px);
+          transition: ease-in 0.5s;
+        }
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
+ 
 }
