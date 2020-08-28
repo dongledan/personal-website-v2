@@ -24,17 +24,23 @@ html { font-family: "Inter", "system-ui"; }
 
 $scrollLength: 100vh;
 
+body {
+  scroll-behavior: smooth;
+  transition: background .4s ease;
+  background: $platinum;
+  &.dark-mode {
+    background: darken($black, 10%);
+  }
+}
+
 body.light-mode {
   background: $platinum;
   color: $black;
- 
-  scroll-behavior: smooth;
 }
 
 body.dark-mode {
   background: darken($black, 10%);
   color: $platinum;
-  scroll-behavior: smooth;
 
   .navbar-container {
     .navbar {
@@ -66,14 +72,18 @@ body.dark-mode {
     }
   }
 
+  .header-container {
+    transition: 0.4s ease;
+  }
   .projects-container {
+    transition: 0.4s ease;
+
     .project-container {
       .project-content {
         .project-tech-container {
           .project-tech {
             border: 1.5px solid $brown;
             color: $brown;
-
           }
         }
       }
@@ -112,7 +122,7 @@ a {
     }
 
     &:nth-child(1){
-      background: #f5f5f5;
+      background: $white;
     }
 
     &:nth-child(2){
@@ -127,17 +137,37 @@ a {
       background: $pink;
     }
     &:nth-child(5){
-      background: #4e5a6a;
+      background: $gray;
     }
   }
 }
 
-hr {
-  margin-right: 40%;
+.toggle-container {
+  top: -1px;
+  cursor: pointer;
+  font-size: 25px;
+  margin: 0 25px;
+  .sun {
+    color: $sun;
+    padding: 0px 7px;
+    font-size: 22px;
 
-  @include tablet {
-    margin-right: 60%;
+    &:hover {
+      color: $sun;
+      text-shadow: 0 0 20px $sun;
+      transition: ease-in 0.3s;
+    }
   }
+  .moon {
+    padding: 0px 6px;
+    border-radius: 25px;
+    &:hover {
+      color: $moon;
+      text-shadow: 0 0 20px $moon;
+      transition: ease-in 0.3s;
+    }
+  }
+ 
 }
 
 footer {
@@ -173,5 +203,4 @@ footer {
       }
     }
   }
- 
 }

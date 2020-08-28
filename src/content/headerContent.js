@@ -27,7 +27,6 @@ let randomContent = [
     `My guilty pleasure is watching 90 Day Fiancé.`,
     `Ask me about anything fitness related <span role="img" aria-label="muscle">💪</span>. ^1000 I workout so I can eat shamelessly.`,
     `If I could have any superpower, it would be to stop time. ^1000 I always think about this when I wake up in the morning as I hit snooze 30 times.`,
-    `I'm allergic to dogs.^1000.. but that doesn't stop me from running up to every dog I see. ^1000 P.S. I will dogsit for free! ^500 Danny's Doggy Daycare is open for business!`,
     `I played the tuba in middle school. ^1000 I had to sit on a phonebook to play it <span role="img" aria-label="sweat-smile">😅</span>.`,
     `I mostly listen to indie/alternative, hip hop, and Spotify's algorithm. ^1000 My favorite band is Cage The Elephant.`,
     `I am currently reading <i>The Design of Everyday Things</i>, <i>Pragmatic Thinking and Learning</i>, and Haruki Murakami.`

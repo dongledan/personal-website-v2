@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
 
-import Toggle from './Toggle';
+import DarkMode from './DarkMode';
 
 export default class Navbar extends Component {
     render() {
@@ -14,7 +14,7 @@ export default class Navbar extends Component {
                     <Link to={"/projects"} className="navbar-link">
                         Projects
                     </Link>
-                   <Toggle />
+                    <DarkMode />
                 </nav>
             </div>
         );
