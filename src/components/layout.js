@@ -11,6 +11,8 @@ import PropTypes from "prop-types";
 import Navbar from "./Navbar";
 import { scrollToTop } from "../utils";
 
+import '../scss/index.scss';
+
 const Layout = ({ children }) => {
     return (
         <>

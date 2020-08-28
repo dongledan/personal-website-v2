@@ -24,10 +24,65 @@ html { font-family: "Inter", "system-ui"; }
 
 $scrollLength: 100vh;
 
-body {
-  background-color: $platinum;
+body.light-mode {
+  background: $platinum;
   color: $black;
+ 
   scroll-behavior: smooth;
+}
+
+body.dark-mode {
+  background: darken($black, 10%);
+  color: $platinum;
+  scroll-behavior: smooth;
+
+  .navbar-container {
+    .navbar {
+      .navbar-link {
+        color: $platinum;
+        &:after {
+          color: lighten($lightGreen, 20%);        }
+        &:hover {
+          color: lighten($lightGreen, 20%);        }
+      }
+    }
+  }
+  .console {
+    background: $black;
+
+    .dots-container {
+      background: darken($pink, 5%);
+    }
+    .console-header {
+      $color: $platinum
+    }
+    .text {
+      .output-text {
+        color: $brown;
+      }
+    .cursor {
+      color: $platinum;
+    }
+    }
+  }
+
+  .projects-container {
+    .project-container {
+      .project-content {
+        .project-tech-container {
+          .project-tech {
+            border: 1.5px solid $brown;
+            color: $brown;
+
+          }
+        }
+      }
+    }
+  }
+
+  a {
+    color: lighten($lightGreen, 20%);
+  }
 }
 
 .header {
@@ -40,7 +95,7 @@ a {
   transition: 0.1s ease-in-out;
 
   &:hover {
-    opacity: 0.75;
+    opacity: 0.95;
   }
 }
 
@@ -57,22 +112,22 @@ a {
     }
 
     &:nth-child(1){
-      background-color: #fff;
+      background: #f5f5f5;
     }
 
     &:nth-child(2){
-      background-color: $brown;
+      background: $brown;
     }
     
     &:nth-child(3){
-      background-color: $lightGreen;
+      background: $lightGreen;
     }
 
     &:nth-child(4){
-      background-color: $pink;
+      background: $pink;
     }
     &:nth-child(5){
-      background-color: $black;
+      background: #4e5a6a;
     }
   }
 }

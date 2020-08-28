@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
 
+import Toggle from './Toggle';
+
 export default class Navbar extends Component {
     render() {
         return (
@@ -12,7 +14,7 @@ export default class Navbar extends Component {
                     <Link to={"/projects"} className="navbar-link">
                         Projects
                     </Link>
-                   
+                   <Toggle />
                 </nav>
             </div>
         );
