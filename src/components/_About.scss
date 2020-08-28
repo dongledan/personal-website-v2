@@ -1,13 +1,13 @@
 
 .console {
   border-top: 28px solid #d5d5d5;
+  background: $white;
   position: relative;
   display: flex;
   border-radius: 10px;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
   0 2px 4px -1px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
-  background-color: #f1f1f3;
 
   .dots-container {
     position: absolute;
@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: $brown;
+    background: $brown;
     width: 100%;
     border-radius: 10px 10px 0 0;
 
@@ -41,21 +41,20 @@
       box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
 
       &:nth-child(1){
-        background-color: #ff6057;
+        background: #ff6057;
         margin-left: 15px;
       }
   
       &:nth-child(2){
-        background-color: #ffc22e;
+        background: #ffc22e;
       }
       
       &:nth-child(3){
-        background-color: #28ca40;
+        background: #28ca40;
       }
     }
   }
   .text {
-    background-color: #f1f1f3;
     flex-wrap: wrap;
     min-width: 340px;
     background: none;
@@ -103,7 +102,7 @@
     width: 40%;
     margin-left: 30%;
     height: 2px;
-    background-color: $lightGreen;
+    background: $lightGreen;
     content: '';
   }
 
@@ -115,7 +114,7 @@
     width: 100%;
     height: 2px;
     transform: scaleX(0);
-    background-color: $lightGreen;
+    background: $lightGreen;
     content: '';
     transition: transform 0.4s;
   }
