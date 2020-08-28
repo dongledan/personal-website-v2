@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
 
-import DarkMode from './DarkMode';
+import DarkMode from "./DarkMode";
 
 export default class Navbar extends Component {
     render() {

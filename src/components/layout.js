@@ -11,7 +11,7 @@ import PropTypes from "prop-types";
 import Navbar from "./Navbar";
 import { scrollToTop } from "../utils";
 
-import '../scss/index.scss';
+import "../scss/index.scss";
 
 const Layout = ({ children }) => {
     return (
@@ -29,8 +29,11 @@ const Layout = ({ children }) => {
                     © {new Date().getFullYear()} Danny Li
                     {` `}
                     <div className="back-to-top-container">
-                        <a className="back-to-top" onClick={() => scrollToTop()}>
-                        <div className="arrow">^</div>
+                        <a
+                            className="back-to-top"
+                            onClick={() => scrollToTop()}
+                        >
+                            <div className="arrow">^</div>
                             Back to top
                         </a>
                     </div>
