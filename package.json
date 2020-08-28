@@ -2,8 +2,11 @@
   "name": "web-portoflio-v2",
   "description": "Danny Li's Portolfio",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Danny Li",
+  "engines": {
+    "node": "12.16.3"
+  },
   "dependencies": {
     "gatsby": "^2.24.47",
     "gatsby-image": "^2.4.16",
