@@ -11,7 +11,7 @@ export default class Navbar extends Component {
                     <Link to={"/"} className="navbar-link">
                         Home
                     </Link>
-                    <Link to={"/projects"} className="navbar-link">
+                    <Link to={"/projects/"} className="navbar-link">
                         Projects
                     </Link>
                     <DarkMode />
