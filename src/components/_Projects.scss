@@ -30,7 +30,7 @@
 
     .project-title {
       font-weight: bold;
-      font-size: x-large;
+      font-size: 1.375em;
       margin-bottom: 20px;
     }
 
@@ -50,8 +50,11 @@
       @include tablet {
         width: 95%;
         margin-top: 20px;
-        font-size: 15px;
+        font-size: .938em;
+        
       }
+
+      
 
       .project-tech-container {
         display: flex;
@@ -62,7 +65,7 @@
         .project-tech {
           padding: 4px 8px;
           text-align: center;
-          font-size: smaller;
+          font-size: 0.813em;
           color: $black;
           margin-bottom: 5px;
           border: 1.5px solid $pink;
@@ -79,9 +82,8 @@
     
 
       .project-desc {
-        text-align: justify;
         margin-bottom: 20px;
-        line-height: 22px;
+        line-height: 1.375em;
       }
 
       button {
