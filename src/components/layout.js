@@ -1,17 +1,8 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react";
 import PropTypes from "prop-types";
 
 import Navbar from "./Navbar";
-import { scrollToTop } from "../utils";
-
-import "../scss/index.scss";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
     return (
@@ -25,19 +16,7 @@ const Layout = ({ children }) => {
                 }}
             >
                 <main>{children}</main>
-                <footer className="footer-container">
-                    © {new Date().getFullYear()} Danny Li
-                    {` `}
-                    <div className="back-to-top-container">
-                        <a
-                            className="back-to-top"
-                            onClick={() => scrollToTop()}
-                        >
-                            <div className="arrow">^</div>
-                            Back to top
-                        </a>
-                    </div>
-                </footer>
+                <Footer />
             </div>
         </>
     );
