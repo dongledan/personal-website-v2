@@ -16,6 +16,10 @@ footer {
 
    .footer-copyright {
     margin-right: 15px;
+
+    @include mobile {
+     margin-right: 0;
+    }
    }
 
    .divider {
