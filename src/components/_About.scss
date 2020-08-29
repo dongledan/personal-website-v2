@@ -60,7 +60,7 @@
     margin: 0px;
     padding: 30px 17px 20px 17px;
     font-size: .938em;
-    line-height: 34px;
+    line-height: 2.125em;
     border: none;
 
     @include mobile {
@@ -70,15 +70,20 @@
     &:focus, &:active { 
       outline: none;
     }
+
+    .input-text {
+      font-size: .938em;
+    }
+
     .output-text {
       color: $pink;
       margin: 0 22px;
+      font-size: .938em;
     }
     .array-container {
       display: flex;
       flex-wrap: wrap;
       font-size: .938em;
-
     }
 
     .cursor {

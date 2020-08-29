@@ -17,7 +17,7 @@ export default class About extends Component {
                         </div>
                     </div>
                     <div className="text">
-                        <div>{`>> Danny.contactInfo`}</div>
+                        <div className="input-text">{`>> Danny.contactInfo`}</div>
                         <div className="array-container output-text">
                             [{"\xa0"}
                             {contacts.map((link, i) => (
@@ -28,11 +28,11 @@ export default class About extends Component {
                             ))}
                             {"\xa0"}]
                         </div>
-                        <div>{`>> Danny.resume`}</div>
+                        <div className="input-text">{`>> Danny.resume`}</div>
                         <div className="output-text">"{resume}"</div>
                         {aboutMe.map((info, i) => (
                             <div key={i}>
-                                <div>{`>> ${info.input}`}</div>
+                                <div className="input-text">{`>> ${info.input}`}</div>
                                 <div className="output-text">{`${info.output}`}</div>
                             </div>
                         ))}
