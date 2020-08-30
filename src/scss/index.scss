@@ -162,8 +162,9 @@ a {
   .moon {
     padding: 0px 6px;
     border-radius: 25px;
+    color: $moon;
     &:hover {
-      text-shadow: 0 0 20px $moon;
+      text-shadow: 0 0 20px #E0D867;
       transition: ease-in 0.3s;
     }
   }
