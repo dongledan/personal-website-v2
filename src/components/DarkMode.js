@@ -11,7 +11,7 @@ const DarkMode = () => {
             <span className="toggle-container" onClick={darkMode.toggle}>
                 {darkMode.value ? (
                     <span className="sun">
-                        <FaSun />
+                        <FaSun className="sun"/>
                     </span>
                 ) : (
                     <span className="moon">
