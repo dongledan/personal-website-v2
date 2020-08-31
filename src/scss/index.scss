@@ -153,16 +153,18 @@ a {
   position: relative;
   .sun {
     color: $sun;
+    will-change: filter;
     &:hover {
-      color: $sun;
-      text-shadow: 0 0 20px $sun;
+      -webkit-filter: dropshadow(0 0 20px $sun);
+      filter:drop-shadow(0 0 20px $sun);
       transition: ease-in 0.3s;
     }
   }
   .moon {
     color: $moon;
+    will-change: filter;
     &:hover {
-      text-shadow: 0 0 20px #E0D867;
+      filter:drop-shadow(0 0 30px $moon);
       transition: ease-in 0.3s;
     }
   }
