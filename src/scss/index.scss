@@ -8,15 +8,6 @@
 @import '../components/Outlines';
 @import '../components/Footer';
 
-@use "~inter-ui/default" with (
-  $inter-font-display: swap,
-  $inter-font-path: '~inter-ui/Inter (web)'
-);
-@use "~inter-ui/variable" with (
-  $inter-font-display: swap,
-  $inter-font-path: '~inter-ui/Inter (web)'
-);
-
 html { font-family: "Inter", "system-ui"; }
 
 @supports (font-variation-settings: normal) {
@@ -163,6 +154,7 @@ a {
   .moon {
     color: $moon;
     will-change: filter;
+
     &:hover {
       filter:drop-shadow(0 0 30px $moon);
       transition: ease-in 0.3s;
