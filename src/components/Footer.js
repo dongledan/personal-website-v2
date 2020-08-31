@@ -7,8 +7,11 @@ import {
     FaGooglePlay,
     FaAngleUp,
 } from "react-icons/fa";
+import smoothscroll from 'smoothscroll-polyfill';
 
 import { scrollToTop } from "../utils";
+
+smoothscroll.polyfill();
 
 export default function Footer() {
     return (
