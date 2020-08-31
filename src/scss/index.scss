@@ -97,7 +97,7 @@ body.dark-mode {
 }
 
 .header {
-  font-size: 40px; 
+  font-size: 2.5em; 
 }
 
 a {
@@ -114,8 +114,9 @@ a {
   display: flex;
 
   .color {
-    width: 40px;
-    height: 2.5px;
+    width: 2.5em;
+    height: 3.5px;
+    border-radius: 5px;
     margin: 20px 2.5px;
 
     @include mobile {
@@ -144,15 +145,14 @@ a {
 }
 
 .toggle-container {
-  top: -1px;
   cursor: pointer;
-  font-size: 25px;
-  margin: 0 25px;
+  font-size: 1.188em;;
+  margin-left: 25px;
+  padding: 0 7px;
+  top: 2px;
+  position: relative;
   .sun {
     color: $sun;
-    padding: 0px 7px;
-    font-size: 22px;
-
     &:hover {
       color: $sun;
       text-shadow: 0 0 20px $sun;
@@ -160,8 +160,6 @@ a {
     }
   }
   .moon {
-    padding: 0px 6px;
-    border-radius: 25px;
     color: $moon;
     &:hover {
       text-shadow: 0 0 20px #E0D867;

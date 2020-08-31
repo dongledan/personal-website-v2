@@ -79,19 +79,19 @@ footer {
 
  .back-to-top-container {
    .back-to-top {
-     font-size: .938em;
+     font-size: 1em;
      cursor: pointer !important;
 
      .arrow {
        text-align: center;
        transform: translateY(35px);
-       font-size: xx-large;
+       font-size: 1.5em;
        opacity: 0;
-       padding: 5px 0;
+       padding: 10px 0;
 
        &:hover {
          opacity: 1;
-         transform: translateY(15px);
+         transform: translateY(10px);
          transition: ease-in 0.5s;
          &:after {
            opacity: 1;
