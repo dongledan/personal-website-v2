@@ -11,7 +11,11 @@ import smoothscroll from 'smoothscroll-polyfill';
 
 import { scrollToTop } from "../utils";
 
-smoothscroll.polyfill();
+try {
+  smoothscroll.polyfill();
+} catch (error) {
+  console.log(error);
+}
 
 export default function Footer() {
     return (
