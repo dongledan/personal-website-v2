@@ -19,8 +19,14 @@ export default function Project(props) {
                     rel="noopener noreferrer"
                     target="_blank"
                     href={project.link}
+                    className="project-link"
                 >
-                    <button className="learn-more">
+                    <button
+                        className="learn-more"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href={project.link}
+                    >
                         <span className="circle" aria-hidden="true">
                             <span className="icon arrow" />
                         </span>

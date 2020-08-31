@@ -8,19 +8,10 @@
 @import '../components/Outlines';
 @import '../components/Footer';
 
-@use "~inter-ui/default" with (
-  $inter-font-display: swap,
-  $inter-font-path: '~inter-ui/Inter (web)'
-);
-@use "~inter-ui/variable" with (
-  $inter-font-display: swap,
-  $inter-font-path: '~inter-ui/Inter (web)'
-);
-
-html { font-family: "Inter", "system-ui"; }
-
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
-  html { font-family: "Inter var", "system-ui"; }
+  html { font-family: 'Inter var', sans-serif; }
 }
 
 $scrollLength: 100vh;
@@ -153,16 +144,19 @@ a {
   position: relative;
   .sun {
     color: $sun;
+    will-change: filter;
     &:hover {
-      color: $sun;
-      text-shadow: 0 0 20px $sun;
+      -webkit-filter: dropshadow(0 0 20px $sun);
+      filter:drop-shadow(0 0 20px $sun);
       transition: ease-in 0.3s;
     }
   }
   .moon {
     color: $moon;
+    will-change: filter;
+
     &:hover {
-      text-shadow: 0 0 20px #E0D867;
+      filter:drop-shadow(0 0 30px $moon);
       transition: ease-in 0.3s;
     }
   }

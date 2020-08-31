@@ -38,8 +38,11 @@
       &:hover {
         color: $lightGreen;
         transition: 0.3s;
+
         &:after {
           transform: scaleX(1);
+          border-radius: 5px;
+
         }
       }
     }
