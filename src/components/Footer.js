@@ -5,6 +5,7 @@ import {
     FaEnvelope,
     FaApple,
     FaGooglePlay,
+    FaAngleUp,
 } from "react-icons/fa";
 
 import { scrollToTop } from "../utils";
@@ -60,7 +61,9 @@ export default function Footer() {
             </div>
             <div className="back-to-top-container">
                 <a className="back-to-top" onClick={() => scrollToTop()}>
-                    <div className="arrow">^</div>
+                    <div className="arrow">
+                        <FaAngleUp />
+                    </div>
                     Back to top
                 </a>
             </div>

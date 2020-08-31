@@ -1,6 +1,6 @@
 footer {
  display: flex;
- padding: 75px 0 50px 0;
+ padding: 75px 0 10px 0;
  align-items: center;
  flex-direction: column;
 
@@ -15,10 +15,12 @@ footer {
    }
 
    .footer-copyright {
-    margin-right: 15px;
+    margin-right: 11px;
+    margin-left: 28.5px;
 
     @include mobile {
      margin-right: 0;
+     margin-left: 0;
     }
    }
 
@@ -79,19 +81,19 @@ footer {
 
  .back-to-top-container {
    .back-to-top {
-     font-size: .938em;
+     font-size: 1em;
      cursor: pointer !important;
 
      .arrow {
        text-align: center;
        transform: translateY(35px);
-       font-size: xx-large;
+       font-size: 1.5em;
        opacity: 0;
-       padding: 5px 0;
+       padding: 10px 0;
 
        &:hover {
          opacity: 1;
-         transform: translateY(15px);
+         transform: translateY(10px);
          transition: ease-in 0.5s;
          &:after {
            opacity: 1;
