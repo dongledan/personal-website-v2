@@ -15,10 +15,12 @@ footer {
    }
 
    .footer-copyright {
-    margin-right: 15px;
+    margin-right: 11px;
+    margin-left: 28.5px;
 
     @include mobile {
      margin-right: 0;
+     margin-left: 0;
     }
    }
 
