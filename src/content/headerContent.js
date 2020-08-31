@@ -28,7 +28,7 @@ let randomContent = [
     `Ask me about anything fitness related <span role="img" aria-label="muscle">💪</span>. ^1000 I workout so I can eat shamelessly.`,
     `If I could have any superpower, it would be to stop time. ^1000 I always think about this when I wake up in the morning as I hit snooze 30 times.`,
     `I played the tuba in middle school. ^1000 I had to sit on a phonebook to play it <span role="img" aria-label="sweat-smile">😅</span>.`,
-    `I mostly listen to indie/alternative, hip hop, and Spotify's algorithm. ^1000 My favorite band is Cage The Elephant.`,
+    `I mostly listen to indie/alternative, hip hop, and Spotify's algorithm. ^1000 My favorite band is Cage The <span role="img" aria-label="elephant">🐘</span>.`,
     `I am currently reading <i>The Design of Everyday Things</i>, <i>Pragmatic Thinking and Learning</i>, and Haruki Murakami.`,
 ];
 

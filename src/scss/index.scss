@@ -8,10 +8,10 @@
 @import '../components/Outlines';
 @import '../components/Footer';
 
-html { font-family: "Inter", "system-ui"; }
-
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
-  html { font-family: "Inter var", "system-ui"; }
+  html { font-family: 'Inter var', sans-serif; }
 }
 
 $scrollLength: 100vh;
