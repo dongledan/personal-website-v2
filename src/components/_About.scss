@@ -1,6 +1,7 @@
 
 .console {
   border-top: 28px solid #d5d5d5;
+  min-width: 225px;
   background: $white;
   position: relative;
   display: flex;
@@ -22,8 +23,9 @@
     border-radius: 10px 10px 0 0;
 
     .console-header {
-      margin-left: -60px;
+      margin-left: -72px;
       text-align: center;
+      min-width: 300px;
       width: 100%;
 
       @include mobile {
