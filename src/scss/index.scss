@@ -21,7 +21,7 @@ body {
   transition: background .4s ease;
   background: $platinum;
   &.dark-mode {
-    background: darken($black, 10%);
+    background: $black--dark;
   }
 }
 
@@ -31,7 +31,7 @@ body.light-mode {
 }
 
 body.dark-mode {
-  background: darken($black, 10%);
+  background: $black--dark;
   color: $platinum;
 
   .navbar-container {
@@ -39,9 +39,9 @@ body.dark-mode {
       .navbar-link {
         color: $platinum;
         &:after {
-          color: lighten($lightGreen, 20%);        }
+          color: $lightGreen--dark;        }
         &:hover {
-          color: lighten($lightGreen, 20%);        }
+          color: $lightGreen--dark;        }
       }
     }
   }
@@ -83,7 +83,7 @@ body.dark-mode {
   }
 
   a {
-    color: lighten($lightGreen, 20%);
+    color: $lightGreen--dark;
   }
 }
 
@@ -108,10 +108,10 @@ a {
     width: 2.5em;
     height: 3.5px;
     border-radius: 5px;
-    margin: 20px 2.5px;
+    margin: 20px 2.5px 40px 2.5px;
 
     @include mobile {
-      margin: 10px 2.5px;
+      margin: 10px 2.5px 20px 2.5px;
     }
 
     &:nth-child(1){
@@ -130,7 +130,7 @@ a {
       background: $pink;
     }
     &:nth-child(5){
-      background: $gray;
+      background: $black;
     }
   }
 }
