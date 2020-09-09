@@ -91,7 +91,7 @@
     .cursor {
       animation: blink 1s infinite step-end;
       font-weight: bolder;
-      font-size: 1.35em;
+      font-size: 1.15em;
       color: $black;
     }
   }
@@ -101,6 +101,7 @@
 .about-link {
   padding-bottom: 5px;
   position: relative;
+  font-weight: 450;
 
   &:before {
     position: absolute;
