@@ -1,10 +1,44 @@
 import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
 export default function Project(props) {
-    const { project } = props;
+    const { project, i } = props;
+    const data = useStaticQuery(graphql`
+        query {
+            junfusuma: file(relativePath: { eq: "JUNFUSUMA.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1023) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            mtalens: file(relativePath: { eq: "MTALens.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1023) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            barisloaded: file(relativePath: { eq: "BarIsLoaded.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1023) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+        }
+    `);
+
+    const junfusuma = data.junfusuma.childImageSharp.fluid;
+    const mtalens = data.mtalens.childImageSharp.fluid;
+    const barisloaded = data.barisloaded.childImageSharp.fluid;
+
+    const images = [junfusuma, mtalens, barisloaded];
+    console.log("hi");
     return (
         <div className="project-container">
-            <img className="project-img" src={project.img} alt="project" />
+            <Img className="project-img" fluid={images[i]} alt="project" />
             <div className="project-content">
                 <div className="project-title-line" />
                 <div className="project-title">{project.name}</div>
