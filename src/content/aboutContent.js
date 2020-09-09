@@ -6,16 +6,16 @@ export const aboutMe = [
     {
         input: "Danny.skills",
         output:
-            '[ "Javascript", "Node.js", "Express", "React", "Redux", "HTML5", "CSS3", "SASS", "webpack", "git", "gimp" ]',
+            '[ \xa0"Javascript", "Node.js", "Express", "React", "Redux", "HTML5", "CSS3", "SASS", "webpack", "git", "gimp" \xa0]',
     },
     {
         input: "Danny.education",
-        output: `[ "Software Engineering Immersive - Fullstack Academy of Code", "B.A. in Accounting & Economics - CUNY Queens College" ]`,
+        output: `[ \xa0"Fullstack Academy of Code", "CUNY Queens College" \xa0]`,
     },
 
     {
         input: "Danny.interests",
         output:
-            '[ "frontend", "baseball", "hiking", "powerlifting", "buffets" ]',
+            '[ \xa0"frontend", "baseball", "hiking", "powerlifting", "buffets" \xa0]',
     },
 ];

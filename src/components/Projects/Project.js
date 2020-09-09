@@ -35,7 +35,6 @@ export default function Project(props) {
     const barisloaded = data.barisloaded.childImageSharp.fluid;
 
     const images = [junfusuma, mtalens, barisloaded];
-    console.log("hi");
     return (
         <div className="project-container">
             <Img className="project-img" fluid={images[i]} alt="project" />
