@@ -10,8 +10,8 @@ export default class Projects extends Component {
             <div className="projects-container">
                 <div className="header">Projects</div>
                 <ColorLine />
-                {projects.map(project => (
-                    <Project project={project} key={project.name} />
+                {projects.map((project, i) => (
+                    <Project project={project} key={project.name} i={i} />
                 ))}
             </div>
         );
