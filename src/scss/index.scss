@@ -39,9 +39,11 @@ body.dark-mode {
       .navbar-link {
         color: $platinum;
         &:after {
-          color: $lightGreen--dark;        }
+          background: $lightGreen--dark;        
+        }
         &:hover {
-          color: $lightGreen--dark;        }
+          color: $lightGreen--dark;        
+        }
       }
     }
   }
@@ -71,11 +73,23 @@ body.dark-mode {
     transition: 0.4s ease;
 
     .project-container {
+      .project-title-line {
+        border-top: solid 4.5px $lightGreen--dark;
+      }
       .project-content {
         .project-tech-container {
           .project-tech {
             border: 1.5px solid $brown;
             color: $brown;
+          }
+        }
+        .project-link {
+          button {
+            &.learn-more {
+              .circle {
+                background: $lightGreen--dark;
+              }
+            }
           }
         }
       }
@@ -84,6 +98,24 @@ body.dark-mode {
 
   a {
     color: $lightGreen--dark;
+  }
+
+  .colors-container {
+    .color {
+      &:nth-child(3) {
+        background: $lightGreen--dark;
+      }
+    }
+  }
+
+  footer {
+    .copyright-container {
+      .footer-social-container {
+        .google {
+          background: $lightGreen--dark;
+        }
+      }
+    }
   }
 }
 
@@ -105,13 +137,13 @@ a {
   display: flex;
 
   .color {
-    width: 2.5em;
+    width: 2.25em;
     height: 3.5px;
     border-radius: 5px;
-    margin: 20px 2.5px 40px 2.5px;
+    margin: 20px 2px 40px 2px;
 
     @include mobile {
-      margin: 10px 2.5px 20px 2.5px;
+      margin: 10px 2px 20px 2px;
     }
 
     &:nth-child(1){

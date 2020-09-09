@@ -6,6 +6,7 @@ export default function Project(props) {
         <div className="project-container">
             <img className="project-img" src={project.img} alt="project" />
             <div className="project-content">
+                <div className="project-title-line" />
                 <div className="project-title">{project.name}</div>
                 <div className="project-desc">{project.description}</div>
                 <div className="project-tech-container">
