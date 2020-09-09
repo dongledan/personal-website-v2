@@ -66,6 +66,16 @@ body.dark-mode {
     }
   }
 
+  .about-link {
+    &:before {
+      background: $lightGreen--dark;
+    }
+    &:after {
+      background: $lightGreen--dark;
+    }
+  }
+  
+
   .header-container {
     transition: 0.4s ease;
   }
