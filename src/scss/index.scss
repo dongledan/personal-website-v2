@@ -177,11 +177,17 @@ a {
   }
 }
 
+
+//dark mode
 .toggle-container {
   cursor: pointer;
-  padding: 0 7px;
   top: 2px;
   position: relative;
+  margin-right: -27px;
+
+  @include mobile {
+    margin-right: 0;
+  }
   .sun {
     color: $sun;
     will-change: filter;

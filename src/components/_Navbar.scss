@@ -2,13 +2,13 @@
   display: flex;
   justify-content: flex-end;
   margin: 0, auto;
+  max-width: 1060px;
 
   @include mobile {
     justify-content: center;
   }
 
   @include desktop {
-    width: 80%;
     margin: auto;
   }
 
@@ -19,7 +19,7 @@
     display: flex;
 
     @include mobile {
-      width: 100%;
+      width: 90%;
     }
 
     .navbar-link {
