@@ -9,10 +9,10 @@ export default class Navbar extends Component {
             <div className="navbar-container">
                 <nav className="navbar" ref="navbar">
                     <Link to={"/"} className="navbar-link">
-                        Home
+                        <div className="link-text">Home</div>
                     </Link>
                     <Link to={"/projects/"} className="navbar-link">
-                        Projects
+                        <div className="link-text">Projects</div>
                     </Link>
                     <DarkMode />
                 </nav>

@@ -19,14 +19,16 @@ export default class About extends Component {
                     <div className="text">
                         <div className="input-text">{`>> Danny.contactInfo`}</div>
                         <div className="array-container output-text">
-                            [{"\xa0"}{"\xa0"}
+                            [{"\xa0"}
+                            {"\xa0"}
                             {contacts.map((link, i) => (
                                 <div key={i}>
                                     "{link}"
                                     {i === contacts.length - 1 ? "" : ",\xa0"}
                                 </div>
                             ))}
-                            {"\xa0"}{"\xa0"}]
+                            {"\xa0"}
+                            {"\xa0"}]
                         </div>
                         <div className="input-text">{`>> Danny.resume`}</div>
                         <div className="output-text">"{resume}"</div>

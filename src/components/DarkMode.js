@@ -7,7 +7,7 @@ const DarkMode = () => {
     const darkMode = useDarkMode(false);
 
     return (
-        <span>
+        <span className="navbar-link">
             <span className="toggle-container" onClick={darkMode.toggle}>
                 {darkMode.value ? (
                     <span className="sun">
