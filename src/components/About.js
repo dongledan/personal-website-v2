@@ -35,7 +35,7 @@ export default class About extends Component {
                         {aboutMe.map((info, i) => (
                             <div key={i}>
                                 <div className="input-text">{`>> ${info.input}`}</div>
-                                <div className="output-text">{info.output}</div>
+                                <div className={`output-text ${info.output === '\xa0true' ? 'boolean-text' : ''}`}>{info.output}</div>
                             </div>
                         ))}
 

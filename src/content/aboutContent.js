@@ -4,6 +4,10 @@ export const aboutMe = [
         output: '"Queens, New York"',
     },
     {
+        input: "Danny.openToRelocation",
+        output: '\xa0true',
+    },
+    {
         input: "Danny.skills",
         output:
             '[ \xa0"Javascript", "Node.js", "Express", "React", "Redux", "HTML5", "CSS3", "SASS", "webpack", "git", "gimp" \xa0]',
