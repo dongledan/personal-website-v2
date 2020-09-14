@@ -3,7 +3,7 @@ module.exports = {
         title: `Danny Li`,
         description: `I'm a software engineer based in Queens, New York. Home to New York's best food. My passion is to deliver fast and seamless user experiences. This is my website.`,
         author: `Danny Li`,
-        url: `https://dannyboy.dev/`,
+        url: `https://dannyboy.dev`,
         image: `/danny.jpg`
     },
     plugins: [

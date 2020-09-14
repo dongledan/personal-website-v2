@@ -54,7 +54,7 @@ function SEO({ description, lang, meta, title, image }) {
                 },
                 {
                     property: `og:image`,
-                    content: site.siteMetadata.image
+                    content: site.siteMetadata.image,
                 },
                 {
                     name: `twitter:card`,
@@ -74,7 +74,7 @@ function SEO({ description, lang, meta, title, image }) {
                 },
                 {
                     name: `twitter:image`,
-                    content: site.siteMetadata.image
+                    content: site.siteMetadata.image,
                 }
             ].concat(meta)}
         />
