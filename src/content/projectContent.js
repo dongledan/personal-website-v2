@@ -1,6 +1,7 @@
-import JUNFUSUMA from "../images/JUNFUSUMA.png";
+import JUNFUSUMA from "../images/junfusuma.png";
 import MTALens from "../images/MTALens.png";
 import BarIsLoaded from "../images/BarIsLoaded.png";
+import website from "../images/website.png";
 
 export const projects = [
     {
@@ -35,5 +36,13 @@ export const projects = [
             "A personal app made for myself to easily calculate the amount of weight on a barbell. Comes in handy with different units (LB/KG). It's leg day, not brain day! Now available on Android and iOS.",
         link: "https://dongledan.github.io/bar-is-loaded/",
         tech: ["React Native", "Node.js", "Expo"],
+    },
+    {
+        name: "Portfolio",
+        img: website,
+        description:
+            "The website you're on now! A fast responsive website that doesn't skip a beat whether in desktop or mobile. Images are loaded in via lazy loading to keep the page snappy. Now with nifty dark mode!",
+        link: "https://github.com/dongledan/personal-website-v2",
+        tech: ["HTML5", "CSS3", "React", "Gatsby", "SASS", "GraphQL"],
     },
 ];

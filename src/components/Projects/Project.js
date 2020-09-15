@@ -6,7 +6,7 @@ export default function Project(props) {
     const { project, i } = props;
     const data = useStaticQuery(graphql`
         query {
-            junfusuma: file(relativePath: { eq: "JUNFUSUMA.png" }) {
+            junfusuma: file(relativePath: { eq: "junfusuma.png" }) {
                 childImageSharp {
                     fluid(maxWidth: 1023) {
                         ...GatsbyImageSharpFluid
@@ -27,14 +27,22 @@ export default function Project(props) {
                     }
                 }
             }
+            website: file(relativePath: { eq: "website.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1023) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
         }
     `);
 
     const junfusuma = data.junfusuma.childImageSharp.fluid;
     const mtalens = data.mtalens.childImageSharp.fluid;
     const barisloaded = data.barisloaded.childImageSharp.fluid;
+    const website = data.website.childImageSharp.fluid;
 
-    const images = [junfusuma, mtalens, barisloaded];
+    const images = [junfusuma, mtalens, barisloaded, website];
     return (
         <div className="project-container">
             <Img className="project-img" fluid={images[i]} alt="project" />
