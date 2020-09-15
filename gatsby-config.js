@@ -7,6 +7,14 @@ module.exports = {
         image: `/danny.jpg`,
     },
     plugins: [
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+                trackingId: `UA-178028561-1`,
+                anonymize: true,
+                respectDNT: true,
+            },
+        },
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sass`,
         {
@@ -38,14 +46,6 @@ module.exports = {
                 classNameLight: "light-mode",
                 storageKey: "darkMode",
                 minify: true,
-            },
-        },
-        {
-            resolve: `gatsby-plugin-google-analytics`,
-            options: {
-                trackingId: `UA-178028561-1`,
-                anonymize: true,
-                respectDNT: true,
             },
         },
         // this (optional) plugin enables Progressive Web App + Offline functionality
