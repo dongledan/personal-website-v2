@@ -5,7 +5,7 @@ export const aboutMe = [
     },
     {
         input: "Danny.openToRelocation",
-        output: '\xa0true',
+        output: "\xa0true",
     },
     {
         input: "Danny.skills",

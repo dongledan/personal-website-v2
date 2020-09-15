@@ -4,7 +4,7 @@ module.exports = {
         description: `I'm a software engineer based in Queens, New York. Home to New York's best food. My passion is to deliver fast and seamless user experiences. This is my website.`,
         author: `Danny Li`,
         url: `https://dannyboy.dev`,
-        image: `/danny.jpg`
+        image: `/danny.jpg`,
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
@@ -43,11 +43,11 @@ module.exports = {
         {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
-              trackingId: `UA-178028561-1`,
-              anonymize: true,
-              respectDNT: true
+                trackingId: `UA-178028561-1`,
+                anonymize: true,
+                respectDNT: true,
             },
-          },
+        },
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline
         // `gatsby-plugin-offline`,
