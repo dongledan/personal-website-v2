@@ -6,7 +6,7 @@ export default function Project(props) {
     const { project, i } = props;
     const data = useStaticQuery(graphql`
         query {
-            junfusuma: file(relativePath: { eq: "junfusuma.png" }) {
+            junfusuma: file(relativePath: { eq: "JUNFUSUMA.png" }) {
                 childImageSharp {
                     fluid(maxWidth: 1023) {
                         ...GatsbyImageSharpFluid

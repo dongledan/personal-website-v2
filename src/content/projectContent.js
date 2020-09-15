@@ -1,4 +1,4 @@
-import JUNFUSUMA from "../images/junfusuma.png";
+import JUNFUSUMA from "../images/JUNFUSUMA.png";
 import MTALens from "../images/MTALens.png";
 import BarIsLoaded from "../images/BarIsLoaded.png";
 import website from "../images/website.png";
