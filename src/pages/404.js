@@ -2,9 +2,12 @@ import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 
+import "../scss/index.scss";
+
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ColorLine from '../components/ColorLine';
+import '../ind'
 
 export default function NotFoundPage() {
     const image = useStaticQuery(graphql`
