@@ -209,3 +209,58 @@ a {
  
 }
 
+.notFound-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+
+  .notFound-text {
+    font-size: 1.25em;
+    margin-bottom: 40px;
+
+    .notFound-link {
+      font-weight: 600;
+      font-size: 1.3em;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        right: 0;
+        width: 80%;
+        margin-left: 10%;
+        border-radius: 2px;
+        height: 4px;
+        background: $lightGreen;
+        content: '';
+      }
+    }
+  }
+
+  .notFound-img {
+    width: 50%;
+    max-width: 530px;
+    height: auto;
+
+    @include mobile {
+      width: 90%;
+    }
+  }
+  .watermark {
+    font-size: 40em;
+    position: fixed;
+    font-weight: bolder;
+    top: 10%;
+    opacity: 0.04;
+    z-index: -100;
+    transform: rotate(-20deg);
+
+    @include mobile {
+      font-size: 17em;
+      top: 20%;
+    }
+  }
+}
+
