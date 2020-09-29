@@ -29,7 +29,9 @@ export default function NotFoundPage() {
                 <ColorLine />
                 <div className="notFound-text">Take in the sights and come back <Link className="notFound-link" to={'/'}>home</Link>.</div>
                 <Img className="notFound-img" fluid={notFound} alt="404 image" />
-                <div className="watermark">404.</div>
+                <div className="watermark one">error.</div>
+                <div className="watermark two">404.</div>
+                <div className="watermark three">page not found.</div>
             </div>
         </Layout>   
     )
