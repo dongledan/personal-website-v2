@@ -25,11 +25,11 @@
 
     .project-title-line {
       border-top: solid 4.5px $lightGreen;
-      width: 22%;
+      width: 10%;
       border-radius: 5px;
 
       @include mobile {
-        width: 32%
+        width: 15%;
       }
    
     }
@@ -38,7 +38,7 @@
       font-size: 1.375em;
       letter-spacing: 2px;
       margin-bottom: 20px;
-      padding-top: 10px;
+      padding-top: 5px;
     }
 
     .project-img {

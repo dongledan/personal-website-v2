@@ -74,7 +74,7 @@ export default function Project(props) {
                         </span>
                         <span className="button-text">Learn More</span>
                     </button>
-                </a>
+                </a>           
             </div>
         </div>
     );
