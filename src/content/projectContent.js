@@ -34,7 +34,7 @@ export const projects = [
         img: BarIsLoaded,
         description:
             "A personal app made for myself to easily calculate the amount of weight on a barbell. Comes in handy with different units (LB/KG). It's leg day, not brain day! Now available on Android and iOS.",
-        link: "https://dongledan.github.io/bar-is-loaded/",
+        link: "https://barisloadedapp.com/",
         tech: ["React Native", "Node.js", "Expo"],
     },
     {
