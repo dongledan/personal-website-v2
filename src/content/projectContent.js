@@ -9,7 +9,7 @@ export const projects = [
         img: JUNFUSUMA,
         description:
             "A fun fullstack side project where I designed a modern shopping experience. I provided all images, logos, and design. JUNFUSUMA is the past, present, and future of fashion.",
-        link: "https://junfusuma.herokuapp.com/",
+        link: "http://junfusuma.herokuapp.com/",
         github: "https://github.com/dongledan/june-fusuma",
         tech: [
             "Node.js",
