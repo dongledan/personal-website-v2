@@ -30,7 +30,7 @@ let randomContent = [
     `I played the tuba in middle school. ^1000 I had to sit on a phonebook to play it <span role="img" aria-label="sweat-smile">😅</span>.`,
     `I mostly listen to indie/alternative, hip hop, and Spotify's algorithm. ^1000 My favorite band is Cage The <span role="img" aria-label="elephant">🐘</span>.`,
     `I am currently reading <i>The Design of Everyday Things</i>, <i>Pragmatic Thinking and Learning</i>, and anything by Haruki Murakami.`,
-    `Take a trip to Iceland by going to this website's <a href="/whoops">404 page</a>!`
+    `Take a trip to Iceland by going to this website's <a href="/whoops">404 page</a>!`,
 ];
 
 const endContent = [

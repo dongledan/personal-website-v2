@@ -22,7 +22,16 @@ export default function Footer() {
         <footer className="footer-container">
             <div className=" copyright-container">
                 <div className="footer-copyright">
-                    © {new Date().getFullYear()} Danny Li ✌️
+                    © {new Date().getFullYear()}{" "}
+                    <a
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href="https://youtu.be/-elwQO0uusA"
+                    >
+                        {" "}
+                        Danny Li{" "}
+                    </a>{" "}
+                    ✌️
                 </div>
                 <div className="divider">{"\xa0"}</div>
                 <div className="footer-social-container">
