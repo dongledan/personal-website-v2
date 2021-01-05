@@ -44,7 +44,8 @@ export default function Project(props) {
 
     const images = [junfusuma, mtalens, barisloaded, website];
     return (
-        <div className="project-container">
+        <div className="project-container" style={{flexDirection: i % 2 ? 'row-reverse' : 'row'}}>
+            <div className="project-watermark">{project.name}.</div>
             <Img className="project-img" fluid={images[i]} alt="project" />
             <div className="project-content">
                 <div className="project-title-line" />

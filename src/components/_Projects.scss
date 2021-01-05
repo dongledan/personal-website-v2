@@ -16,11 +16,21 @@
     flex-wrap: wrap;
     align-items: center; // Safari align-items: stretch by default
     justify-content: space-between;
-    margin: 30px 0;
+    margin: 50px 0;
     width: 100%;
+    position: relative;
 
     @include tablet {
       flex-direction: column;
+    }
+
+    &:hover {
+      .project-watermark {
+        letter-spacing: 16px;
+      }
+      .project-img {
+        transform: scale(1.04);
+      }
     }
 
     .project-title-line {
@@ -45,9 +55,29 @@
       height: auto;
       width: 50%;
       margin-bottom: 10px;
+      transition: all 0.3s ease-in;
 
       @include tablet {
         width: 95%;
+      }
+    }
+
+    .project-watermark {
+      position: absolute;
+      z-index: -99;
+      font-size: 11em;
+      bottom: 0;
+      left: 0;
+      opacity: 0.045;
+      letter-spacing: 14px;
+      line-height: .9em;
+      font-weight: 900;
+      word-break: break-all;
+      transition: all 0.3s ease-in;
+
+      @include mobile {
+        font-size: 8em;
+        line-height: 1em;
       }
     }
     
@@ -58,7 +88,6 @@
         width: 95%;
         margin-top: 20px;
         font-size: 1em;
-        
       }
 
       .project-tech-container {
@@ -88,8 +117,9 @@
 
       .project-desc {
         margin-bottom: 20px;
-        line-height: 1.375em;
+        line-height: 1.5em;
       }
+
       .project-link {
       button {
         position: relative;
