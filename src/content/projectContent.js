@@ -7,7 +7,7 @@ import Griffin from "../images/Griffin.png";
 
 export const projects = [
     {
-        name: "USA COVID Tracker",
+        name: "USA COVID #s",
         img: Covid,
         description:
             "The purpose to build a quick dashboard with easily digestible information. A lot of COVID trackers have waaaay too much numbers; this web app solves the issue by keeping just the facts. I built this SPA to simply show what the numbers are in the USA broken down in counties in each state.",
