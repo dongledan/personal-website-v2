@@ -27,7 +27,14 @@ export default function Project(props) {
                     }
                 }
             }
-            website: file(relativePath: { eq: "website.png" }) {
+            griffin: file(relativePath: { eq: "Griffin.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1023) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            covid: file(relativePath: { eq: "Covid.png" }) {
                 childImageSharp {
                     fluid(maxWidth: 1023) {
                         ...GatsbyImageSharpFluid
@@ -40,11 +47,15 @@ export default function Project(props) {
     const junfusuma = data.junfusuma.childImageSharp.fluid;
     const mtalens = data.mtalens.childImageSharp.fluid;
     const barisloaded = data.barisloaded.childImageSharp.fluid;
-    const website = data.website.childImageSharp.fluid;
+    const griffin = data.griffin.childImageSharp.fluid;
+    const covid = data.covid.childImageSharp.fluid;
 
-    const images = [junfusuma, mtalens, barisloaded, website];
+    const images = [covid, junfusuma, mtalens, barisloaded, griffin];
     return (
-        <div className="project-container" style={{flexDirection: i % 2 ? 'row-reverse' : 'row'}}>
+        <div
+            className="project-container"
+            style={{ flexDirection: i % 2 ? "row-reverse" : "row" }}
+        >
             <div className="project-watermark">{project.name}.</div>
             <Img className="project-img" fluid={images[i]} alt="project" />
             <div className="project-content">
