@@ -87,12 +87,6 @@ body.dark-mode {
         border-top: solid 4.5px $lightGreen--dark;
       }
       .project-content {
-        .project-tech-container {
-          .project-tech {
-            border: 1.5px solid $brown;
-            color: $brown;
-          }
-        }
         .project-link {
           button {
             &.learn-more {
@@ -102,6 +96,19 @@ body.dark-mode {
             }
           }
         }
+      }
+    }
+  }
+
+  .project-tech-container {
+    .project-tech {
+      border: 1.5px solid $brown;
+      color: $brown;
+    }
+    .button-tech {
+      &:hover {
+        background: $brown;
+        color: $black;
       }
     }
   }
@@ -127,6 +134,10 @@ body.dark-mode {
       }
     }
   }
+
+  .hashtag {
+    color: $pink;
+  }
 }
 
 .header {
@@ -141,6 +152,11 @@ a {
   &:hover {
     opacity: 0.8;
   }
+}
+
+.hashtag {
+  color: $brown;
+  font-weight: 300;
 }
 
 .colors-container {

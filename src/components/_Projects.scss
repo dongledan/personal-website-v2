@@ -26,10 +26,10 @@
 
     &:hover {
       .project-watermark {
-        letter-spacing: 16px;
+        letter-spacing: 15px;
       }
       .project-img {
-        transform: scale(1.04);
+        transform: scale(1.02);
       }
       .project-content {
         transform: scale(1.01);
@@ -93,31 +93,6 @@
         margin-top: 20px;
         font-size: 1em;
       }
-
-      .project-tech-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-
-        .project-tech {
-          padding: 4px 8px;
-          text-align: center;
-          font-size: 0.875em;
-          color: $black;
-          margin-bottom: 5px;
-          border: 1.5px solid $pink;
-          color: $pink;
-          border-radius: 5px;
-          margin-right: 8px;
-
-
-          @include tablet {
-            margin-right: 10px;
-          }
-        }
-      }
-    
 
       .project-desc {
         margin-bottom: 20px;
@@ -211,5 +186,41 @@
     }
 
   }
+  }
+}
+
+.project-tech-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  transition: all 0.3s ease-in;
+
+  .project-tech {
+    padding: 4px 8px;
+    text-align: center;
+    font-size: 0.875em;
+    color: $black;
+    margin-bottom: 10px;
+    border: 1.5px solid $pink;
+    color: $pink;
+    border-radius: 5px;
+    margin-right: 8px;
+
+
+    @include tablet {
+      margin-right: 10px;
+    }
+  }
+
+  .button-tech {
+    background: none;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      background: $pink;
+      color: $platinum;
+    }
   }
 }

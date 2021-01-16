@@ -57,7 +57,11 @@ export default function Project(props) {
             style={{ flexDirection: i % 2 ? "row-reverse" : "row" }}
         >
             <div className="project-watermark">{project.name}.</div>
-            <Img className="project-img" fluid={images[i]} alt="project" />
+            <Img
+                className="project-img"
+                fluid={images[project.img]}
+                alt="project"
+            />
             <div className="project-content">
                 <div className="project-title-line" />
                 <div className="project-title">{project.name}</div>
@@ -65,7 +69,7 @@ export default function Project(props) {
                 <div className="project-tech-container">
                     {project.tech.map(tech => (
                         <div key={tech} className="project-tech">
-                            {tech}
+                            <span className="hashtag">#</span> {tech}
                         </div>
                     ))}
                 </div>
